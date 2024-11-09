@@ -87,7 +87,7 @@ nav li:hover{
 
 .Render-Snake{
 height: 600px;
-left: 900px;
+left: 950px;
 padding: 10px;
 bottom: 1px;
 position:absolute
@@ -213,6 +213,7 @@ footer{
     background-color: rgb(36, 35, 35);
     text-align: center;
     padding: 10px;
+    
 }
    
 
@@ -228,10 +229,10 @@ footer img{
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    
+    background-color: black;
     justify-content: center;
     align-items: center;
-    
+   
     
 }
 
@@ -239,7 +240,7 @@ footer img{
 .Card{
     position: relative;
     width: 290px;
-    margin:40px ;
+    margin:100px ;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 180px 1fr auto;
@@ -260,7 +261,7 @@ footer img{
 }
 
 .Card-imagen img{
-    max-width: 100%;
+    max-width: 95%;
     max-height: 100%;
 }
 
@@ -281,4 +282,111 @@ footer img{
 .Card-body h2{
     color: white;
     font-size: 50px;
+}
+
+.Card-body span{
+    color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+
+
+@media(max-width:1021px){
+    .Padre{
+        background-color: #073a19;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 40px;
+        margin:10px 0 ;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+    .Features{
+        background-color: #2ca355;
+        height: 2500px;
+        padding: 30px;
+        margin: 60px;
+        margin: 20px
+        border-radius: 20px;
+        border: 3px solid;
+    }
+    .big-card{
+        background-color: #052b12;
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+    
+    }
+    .big-card img{
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%; 
+        height: 200px;
+        border: 2px solid white;
+        
+        border-radius: 10px;
+    }
+
+    .mini-card{
+    
+        background-color: #073a19;
+        width: 200px;
+        border: 2px solid;
+        border-color: white;
+        text-align: justify;
+        box-shadow: 10px 5px 5px black;
+        padding: 40px;
+        text-align: left;
+    
+        
+        
+        
+    }
+
+    
+footer{
+    background-color: rgb(36, 35, 35);
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+}
+
+@media (max-width:509px){
+    .Features{
+        background-color: #2ca355;
+        height: 3000px;
+        padding: 30px;
+        margin: 60px;
+        margin: 20px
+        border-radius: 20px;
+        border: 3px solid;
+    }
+}
+
+
+@media (max-width:461px){
+    .Features{
+        background-color: #2ca355;
+        height: 3300px;
+        padding: 30px;
+        margin: 60px;
+        margin: 20px
+        border-radius: 20px;
+        border: 3px solid;
+    }
+}
+
+@media (max-width:441px){
+    .Features{
+        background-color: #2ca355;
+        height: 3700px;
+        padding: 30px;
+        margin: 60px;
+        margin: 20px
+        border-radius: 20px;
+        border: 3px solid;
+    }
 }
