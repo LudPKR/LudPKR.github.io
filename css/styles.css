@@ -38,7 +38,8 @@ nav a{
 }
 
 nav li{
-    display: inline-block;
+    display: inline-flex;
+    
     justify-content: center;
     align-items: center;
     padding: 15px;
@@ -49,16 +50,19 @@ nav li{
 
 nav ul{
     text-align: center;
+    
 }
 
-nav img{
+header img{
     max-width: 100%;
     height: 74px;
     width: 190px;
     position: relative;
-    right: 100px;
-    top: 70px;
+    left: 250px;
+    top: 12px;
 }
+
+
 
 nav li:hover{
     position: relative;
@@ -73,9 +77,12 @@ nav li:hover{
 }
 
 .begin{
-    background-color: white;
-    position: relative;
+    
+    background-image: url(../IMAGENES/black-orchid.png);
+    
     height: 600px;
+    display: flex;
+    position: relative;
     
 
 }
@@ -85,59 +92,72 @@ nav li:hover{
     
 }
 
-.Render-Snake{
-height: 600px;
-left: 950px;
+
+
+.Render-Snake img{
+    height: 600px;
+left: 60%;
 padding: 10px;
 bottom: 1px;
 position:absolute
-
-
 }
 
-.Logo2{
+
+.Logo2 img{
     height: 160px;
     bottom: 300px;
     padding: 40px;
+    max-width: 100%;
+    max-height: 100%;
+    left: 2%;
     position: absolute
-    
-
-    
 }
 .BOTON{
     background-color: #7aa32c;
     
     width: 280px;
     height: 40px;
-    border:10px solid ;
+    border: 5px solid ;
     text-align: center;
     position: absolute;
     bottom: 180px;
-    left: 160px;
-    background-image: url(../IMAGENES/black-scales.png);
+    left: 12%;
+    background-image: url(../IMAGENES/green-fibers.png);
     border-radius: 20px;
     padding: 4px 0px 4px 0px;
     margin: 10px;
+    text-decoration: none;
+    color: black;
     
 }
- 
+
+ .BOTON:hover{
+    color: yellowgreen;
+ }
 
 
 .BOTON2{
     background-color: #58791c;
     width: 280px;
     height: 40px;
-    border:10px solid; 
+    border:5px solid; 
     border-radius: 20px;
     text-align: center;
     position: absolute;
-    bottom: 60px;
-    left: 160px;
-    background-image: url(../IMAGENES/);
+    bottom: 10%;
+    left: 12%;
+    background-image: url(../IMAGENES/green-fibers.png);
     background-size: cover;
     padding: 4px 0px 4px 0px;
     margin: 10px;
     
+    text-decoration: none;
+    
+    color: black;
+}
+
+.BOTON2:hover{
+    color: yellowgreen;
 }
     
 .Padre{
@@ -150,14 +170,14 @@ position:absolute
     border-radius: 10px;
 }
 .Features{
-    
+    border: 3px solid;
+    border-radius: 20px;
     background-color: #2ca355;
     height: 1200px;
     padding: 30px;
     margin: 60px;
     margin: 20px
-    border-radius: 20px;
-    border: 3px solid;
+    
 }
 
 .mini-card{
@@ -290,7 +310,27 @@ footer img{
     padding: 5px;
 }
 
-
+@media(max-width:1262px){
+    header{
+        height: 280px;
+    }
+    header img{
+        left: 80px;
+        z-index: 1;
+    }
+    nav ul{
+        display: block;
+        
+    }
+    nav li{
+        width: 100px;
+    }
+    nav{
+        top: 70px;
+        left: 100px;
+    }
+    
+}
 
 @media(max-width:1021px){
     .Padre{
@@ -304,13 +344,15 @@ footer img{
         border-radius: 10px;
     }
     .Features{
+        border: 3px solid;
+        border-radius: 20px;
         background-color: #2ca355;
         height: 2500px;
         padding: 30px;
         margin: 60px;
         margin: 20px
-        border-radius: 20px;
-        border: 3px solid;
+        
+        
     }
     .big-card{
         background-color: #052b12;
@@ -355,6 +397,12 @@ footer{
 }
 }
 
+@media(max-width:1220px){
+    nav li{
+        display: block;
+    }
+}
+
 @media(max-width:738px){
     .Padre{
         background-color: #073a19;
@@ -367,19 +415,58 @@ footer{
         border-radius: 10px;
         
     }
+    .begin{
+        
+      
+        height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        position: relative;
+        
+    
+    }
+    .Render-Snake img{
+        left: 40%;
+        height: 350px;
+        bottom: 42%;
+    }
+
+    .Logo2 img{
+        height: 100px;
+        z-index: 2;
+        bottom: 20%;
+        left: 20%;
+    }
+    .BOTON{
+        bottom: 3%;
+        height: 20px;
+    }
+    .BOTON2{
+        height: 20px;
+        bottom: 12%;
+    }
 }
 
 
 @media(max-width:506px){
     .Features{
+        border: 3px solid;
+        border-radius: 20px;
         background-color: #2ca355;
         height: 2700px;
         padding: 30px;
         margin: 60px;
         margin: 20px
-        border-radius: 20px;
-        border: 3px solid;
+        
+        
     } 
+    .Logo2 img{
+        left: 5%;
+    }
+    .Render-Snake img{
+        left: 30%;
+    }
 }
 
 @media(max-width:480px){
@@ -389,20 +476,20 @@ footer{
         padding: 30px;
         margin: 60px;
         margin: 20px
-        border-radius: 20px;
-        border: 3px solid;
+        
     } 
 }
 
 @media (max-width:460px){
     .Features{
+        border: 3px solid;
+        border-radius: 20px;
         background-color: #2ca355;
-        height: 3200px;
+        height: 2400px;
         padding: 30px;
         margin: 60px;
         margin: 20px
-        border-radius: 20px;
-        border: 3px solid;
+        
     } 
     .mini-card{
     
@@ -413,7 +500,7 @@ footer{
         text-align: justify;
         box-shadow: 10px 5px 5px black;
         padding: 40px;
-        text-align: left;
+        text-align: center;
         height: 200px;
         overflow: scroll;
     
@@ -423,19 +510,22 @@ footer{
     }
 }
 
-@media (max-width:444px){
+@media (max-width:432px){
+.Logo2 img{
+    left: 0%;
+}
+}
+@media (max-width:420px){
     .Features{
+        border: 3px solid;
+        border-radius: 20px;
         background-color: #2ca355;
-        height: 3700px;
+        height: 2000px;
         padding: 30px;
         margin: 60px;
         margin: 20px
-        border-radius: 20px;
-        border: 3px solid;
+        
     } 
-}
-
-@media (max-width:420px){
     .big-card img{
         width: 100%;
         max-width: 100%;
@@ -461,7 +551,11 @@ footer{
         
     }
 }
-
+@media (max-width:404px){
+    .Logo2 img{
+        height: 90px;
+    }
+}
 @media (max-width:384px){
     .big-card img{
         
@@ -471,6 +565,32 @@ footer{
         border: 2px solid white;
         
         border-radius: 10px;
+    }
+}
+@media (max-width:368px){
+  
+    .mini-card{
+    
+        background-color: #073a19;
+        width: 300px;
+        border: 2px solid;
+        border-color: white;
+        text-align: justify;
+        box-shadow: 10px 5px 5px black;
+        padding: 40px;
+        text-align: center;
+        height: 200px;
+        overflow: scroll;
+    
+        
+        
+        
+    }
+    .mini-card p{
+        font-size: 15px;
+    }
+    .Logo2 img{
+        height: 80px;
     }
 }
 
