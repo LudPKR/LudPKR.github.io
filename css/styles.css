@@ -314,18 +314,14 @@ footer img{
     font-size: 50px;
 }
 
-.Card-body span{
-    color: rgb(0, 0, 0);
+.Card-body small{
+    color: rgb(230, 225, 225);
     padding: 5px;
 }
 .color{
     background-color: red;
 }
-.Shistoria{
-    
-    
-    
-}
+
 .Historia{
     display: flex;
     background-image: url(../IMAGENES/black-orchid.png);
@@ -698,7 +694,9 @@ footer{
     }
 }
 @media (max-width:368px){
-  
+    .Historia2 {
+        overflow: scroll;
+    }
     .mini-card{
     
         background-color: #073a19;
